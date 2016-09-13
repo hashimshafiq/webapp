@@ -12,9 +12,8 @@ RSS_FEED = {'world':'https://www.geo.tv/rss/1/0.xml',
 @app.route("/<publication>")
 def get_news(publication="pakistan"):
     feed = fp.parse(RSS_FEED[publication])
-    first_article = feed['entries'][0]
-    return render_template("home.html",title=first_article.get("title"),link=first_article.get("link"),pubDate=first_article.get("pubDate"),description=first_article.get("description"))
 
+    return render_template("home.html",articles=feed['entries'])
 if __name__=='__main__':
     app.run()
 

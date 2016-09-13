@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <title>Headlines Web App</title>
 </head>
-<body>
+<>
 
             <h1>Headlines</h1> <br />
-            <b>{{title}}</b>  <br />
-            {{link}} <br />
-            <i>{{pubDate}}</i> <br />
-            <p>{{description}}</p> <br />
+            {% for article in articles %}
+                <b>{{article.title}}</b>  <br />
+                <a href="{{article.link}}">{{article.link}}</a> <br />
+                <i>{{article.pubDate}}</i> <br />
+                <p>{{article.description}}</p> <br />
+            <hr />
+            {% endfor %}
+
 </body>
 </html>
