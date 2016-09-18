@@ -1,20 +1,34 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Headlines Web App</title>
 </head>
-<>
+
             <h1>Headlines</h1> <br />
             <h2>Current Weather</h2>
             <p>City:<b>{{weather.city}},{{weather.country}}</b></p>
-            <p>{{weather.description}} | {{weather.temperature}}&#8451;</p><br/>
+            <p>{{weather.description}} | {{weather.temperature}}&#8451;</p>
             <form>
                 <input type="text" name="city" placeholder="City Search...">
                 <input type="submit" value="Submit"><br /><br />
 
             </form>
+            <h2>Currency Rates</h2><br />
+            <form>
+                from: <select name="currency_from">
+                {% for currency in currencies %}
+                <option value="{{currency}}">{{currency}}</option>
+                {% endfor %}
+                </select>
+                to: <select name="currency_to">
+                {% for currency in currencies %}
+                <option value="{{currency}}">{{currency}}</option>
+                {% endfor %}
+                </select>
+                <input type="submit" value="submit">
 
+            </form>
+            1 {{currency_from}} = {{currency_to}} {{rate}}
 
 
 
