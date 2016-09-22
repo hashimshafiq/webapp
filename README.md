@@ -6,5 +6,3 @@ RSS Feed Parser Library Python
 Advance jinja Templates usage
 
 GET request usage in templates
-
-Advance cookie
