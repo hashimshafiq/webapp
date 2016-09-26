@@ -7,4 +7,4 @@ Advance jinja Templates
 
 GET/POST requests
 
-Weather images
+
