@@ -5,6 +5,6 @@ RSS Feed Parser Library Python
 
 Advance jinja Templates
 
-GET/POST requests
+GET requests
 
 
