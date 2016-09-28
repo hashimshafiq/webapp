@@ -7,4 +7,6 @@ Advance jinja Templates
 
 GET requests
 
+Weather updates
+
 
